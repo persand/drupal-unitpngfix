@@ -1,0 +1,4 @@
+name = Unit PNG Fix
+description = Adds PNG transparency support for IE6.
+core = 6.x
+version = "6.x-1.0"

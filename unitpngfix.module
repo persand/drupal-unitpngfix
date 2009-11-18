@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Author: Per Sandström per at aerob dot se (persand)
+ * Adds PNG transparency support for IE6.
+ */
+
+/**
+ * Implementation of hook_init().
+ */
+function unitpngfix_init() {
+	$path = drupal_get_path('module', 'unitpngfix');
+
+	drupal_set_html_head('<!--[if lt IE 7]><script type="text/javascript">var unitpngfix_path="/'.$path.'/";</script><script type="text/javascript" src="/'.$path.'/unitpngfix.js"></script><![endif]-->');
+
+}
